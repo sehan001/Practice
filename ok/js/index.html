@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="session">
+      <h2>Session Length</h2>
+      <div class="controls">
+        <div class="control-btn minus" onclick="decreaseSession()">&#8722;</div>
+        <div id="session-length">25</div>
+        <div class="control-btn plus" onclick="increaseSession()">+</div>
+      </div>
+    </div>
+    <div class="break">
+      <h2>Break Length</h2>
+      <div class="controls">
+        <div class="control-btn minus" onclick="decreaseBreak()">&#8722;</div>
+        <div id="break-length">5</div>
+        <div class="control-btn plus" onclick="increaseBreak()">+</div>
+      </div>
+    </div>
+    <div class="timer">
+      <h1 id="timer">25:00</h1>
+      <button id="start" onclick="startTimer()">Start</button>
+      <button id="reset" onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
