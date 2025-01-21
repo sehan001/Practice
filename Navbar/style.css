@@ -1,0 +1,32 @@
+.Nav1 {
+  border: 2px solid red;
+
+}
+
+.Nav1 ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Nav1 li {
+  display: inline;
+}
+
+.Nav1 a {
+  text-decoration: none;
+  color: black;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.Nav2 {
+  border: 2px solid black;
+  display: flex;
+}
+
+.Nav2 a {
+  display: block;
+
+}

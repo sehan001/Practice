@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    /* Reset styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Main container styling */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      /* Main axis alignment */
+      align-items: center;
+      /* Cross axis alignment */
+      flex-direction: row;
+      /* Direction of items */
+      border: 2px solid black;
+      width: 80%;
+      height: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    /* Individual boxes */
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      background-color: coral;
+      color: white;
+      font-size: 18px;
+      border: 2px solid black;
+    }
+
+    /* Example buttons to change alignment */
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .controls button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 style="text-align: center;">Flexbox Alignment Example</h2>
+
+  <!-- Flex container with items -->
+  <div class="container" id="flexContainer">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <!-- Buttons to change alignment -->
+  <div class="controls">
+    <button onclick="setDirection('row')">Row</button>
+    <button onclick="setDirection('column')">Column</button>
+    <button onclick="setJustifyContent('flex-start')">Justify Start</button>
+    <button onclick="setJustifyContent('center')">Justify Center</button>
+    <button onclick="setJustifyContent('space-around')">Justify Space-Around</button>
+    <button onclick="setAlignItems('center')">Align Center</button>
+    <button onclick="setAlignItems('stretch')">Align Stretch</button>
+  </div>
+
+  <script>
+    // JavaScript functions to dynamically change Flexbox properties
+    const container = document.getElementById('flexContainer');
+
+    function setDirection(direction) {
+      container.style.flexDirection = direction;
+    }
+
+    function setJustifyContent(justifyContent) {
+      container.style.justifyContent = justifyContent;
+    }
+
+    function setAlignItems(alignItems) {
+      container.style.alignItems = alignItems;
+    }
+  </script>
+
+</body>
+
+</html>

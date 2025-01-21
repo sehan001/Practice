@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  /* 100=100+10+10+2+2 */
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.box-1 {
+  background-color: blue;
+  box-sizing: content-box;
+}
+
+.box-2 {
+  background-color: red;
+  box-sizing: border-box;
+}

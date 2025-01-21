@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: grey;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.container {
+  margin: 20px;
+  border: 2px solid black;
+  height: 50vh;
+  width: 50vw;
+  background-color: black;
+}
+
+
+.box {
+  height: 25px;
+  width: 25px;
+  margin: 12px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: darkseagreen; */
+}
+
+#b1 {
+  background-color: red;
+  /* order:1 */
+  /* flex-grow: 2; */
+}
+
+#b2 {
+  background-color: blue;
+  /* order:1 */
+  /* flex-grow: 2; */
+}
+
+#b3 {
+  background-color: green;
+  /* order:1 */
+  /* flex-grow: 2; */
+}
+
+#b4 {
+  background-color: lightpink;
+  /* order:1 */
+  /* flex-grow: 2; */
+}
+
+#b5 {
+  background-color: aqua;
+  /* order:1 */
+  /* flex-grow: 2; */
+}
+
+.container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  /* height: auto; */
+  align-content: center;
+  /* this above property only works with "flex-wrap: wrap; is active"*/
+
+
+}
